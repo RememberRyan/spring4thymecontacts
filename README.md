@@ -1,4 +1,4 @@
-# Thymeleaf introduction
+# Thymeleaf & Spring 4 - Simple Contacts App
 
 Spring 4 and Thymeleaf used to create a simple Contacts Phone App. <br>
 
@@ -16,16 +16,16 @@ How to setup customisation for Thymeleaf HTML pages.
     <tr>
         <td>
             <img alt="step 1" src="docs/screenshots/01.png"><br>
-            <p>Find the default HTML5 version in the preferences</p>
+            <p>Step.1<br>Find the default HTML5 version in the preferences</p>
         </td>
         <td>
             <img alt="step 2" src="docs/screenshots/02.png"><br>
-            <p>Duplicate it and then rename the new copy of the file to: Thymeleaf HTML
+            <p>Step.2<br>Duplicate it and then rename the new copy of the file to: Thymeleaf HTML
 </p>
         </td>
         <td>
             <img alt="step 3" src="docs/screenshots/03.png"><br>
-            <p>Change the 2nd line to contain the Thymeleaf reference</p>
+            <p>Step.3<br>Change the 2nd line to contain the Thymeleaf reference</p>
         </td>
     </tr>        
 </table>
