@@ -20,7 +20,7 @@
         <th>Last name</th>
         <th>Description</th>
         <th>Status</th>
-        <th>Full Profile</th>
+        <th>Profile Options</th>
     </tr>
     </thead>
     <tbody>
@@ -35,6 +35,7 @@
         </td>
         <td>
             <a th:href="@{/view(id=${contact.id})}">View</a>
+            <a th:href="@{/editContact/{id}(id=${contact.id})}">Edit</a>
         </td>
     </tr>
 

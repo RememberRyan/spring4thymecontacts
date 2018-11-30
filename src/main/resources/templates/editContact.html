@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit contact</title>
+</head>
+<body>
+<h1>Edit contact form</h1>
+
+<form action="#" th:action="@{/editContact/{id}(id=${contact.id})}" method="post" th:object="${contact}">
+    <input type ="hidden" th:field="*{id}">
+
+    <!--// Custom anti-hacking error message-->
+    <ul>
+        <li th:each="err : ${#fields.errors('*')}" th:text="${err}"} />
+    </ul>
+
+    <!--// th:for acts as a setfocus-->
+    <label th:for="name">Name</label> <input type="text" th:field="*{name}">
+
+    <!--// for  custom error messages-->
+    <!--<span th:if="${#fields.hasErrors('name')}" th:text="'Name is invalid'">[Placeholder if th:text not present] Error message appears here</span>-->
+
+    <!--// for  Hibernate localisation error messages-->
+    <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}">[Placeholder for the default Hibernate internationalised error message]</span>
+    <br>
+    <input type="submit" value="Update">
+</form>
+
+</body>
+</html>

@@ -28,8 +28,11 @@ public class Contact {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    @Length(min = 3, max = 50, message = "Incorrect length")
+    // for custom message
+//    @Length(min = 3, max = 50, message = "Incorrect length")
+    @Length(min = 3, max = 50)
     private String name;
+
 
     @Length(min=3, max=50)
     private String lastName;
