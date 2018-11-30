@@ -1,4 +1,4 @@
-package ee.sdacademy.thymleaf.contacts.domain;
+package ee.sdacademy.thymeleaf.contacts.domain;
 
 import java.util.Date;
 
@@ -10,10 +10,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.Max;
 
+import ee.sdacademy.thymeleaf.contacts.validators.LastNameCustomConstraint;
 import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.Length;
-import org.hibernate.validator.constraints.NotEmpty;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -33,8 +32,8 @@ public class Contact {
     @Length(min = 3, max = 50)
     private String name;
 
-
     @Length(min=3, max=50)
+    @LastNameCustomConstraint(expectedCustomConstraint = "ova")
     private String lastName;
 
     @CreationTimestamp

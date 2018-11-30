@@ -1,4 +1,4 @@
-package ee.sdacademy.thymleaf.contacts;
+package ee.sdacademy.thymeleaf.contacts;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

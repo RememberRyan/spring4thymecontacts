@@ -1,10 +1,10 @@
-package ee.sdacademy.thymleaf.contacts.repository;
+package ee.sdacademy.thymeleaf.contacts.repository;
 
 import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 
-import ee.sdacademy.thymleaf.contacts.domain.Phone;
+import ee.sdacademy.thymeleaf.contacts.domain.Phone;
 
 public interface PhoneRepository extends CrudRepository<Phone, Integer> {
 

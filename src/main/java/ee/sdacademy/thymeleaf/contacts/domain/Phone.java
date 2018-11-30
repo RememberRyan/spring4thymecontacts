@@ -1,6 +1,5 @@
-package ee.sdacademy.thymleaf.contacts.domain;
+package ee.sdacademy.thymeleaf.contacts.domain;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;

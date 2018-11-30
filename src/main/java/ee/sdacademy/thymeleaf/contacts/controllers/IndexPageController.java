@@ -1,6 +1,5 @@
-package ee.sdacademy.thymleaf.contacts.controllers;
+package ee.sdacademy.thymeleaf.contacts.controllers;
 
-import javax.naming.Binding;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,11 +7,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import ee.sdacademy.thymleaf.contacts.domain.Contact;
-import ee.sdacademy.thymleaf.contacts.services.ContactService;
+import ee.sdacademy.thymeleaf.contacts.domain.Contact;
+import ee.sdacademy.thymeleaf.contacts.services.ContactService;
 
 @Controller
 public class IndexPageController {
